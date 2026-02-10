@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure AI Search</title>
+</head>
+<body>
+    <h2>Azure AI Search Application</h2>
+
+    <input type="text" id="query" placeholder="Enter search text">
+    <button onclick="search()">Search</button>
+
+    <p id="result"></p>
+
+    <script>
+        function search() {
+            const q = document.getElementById("query").value;
+            document.getElementById("result").innerText =
+                "You searched for: " + q;
+        }
+    </script>
+</body>
+</html>
